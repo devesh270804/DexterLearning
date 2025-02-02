@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #020202;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    height: 70px;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    border-bottom: 0.2px solid rgb(46, 46, 46);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo-section img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+.logo-section span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-list ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-list a:active{
+    text-decoration: underline;
+}
+
+.nav-list a:hover {
+    background-color: #000;
+    color: #ff9800;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+@media (min-width: 810px) {
+    .navigation {
+        padding: 10px 50px;
+        height: 80px;
+    }
+
+    .logo-section img {
+        height: 60px;
+    }
+
+    .logo-section span {
+        font-size: 1.8rem;
+    }
+
+    .nav-list ul {
+        gap: 30px;
+    }
+
+    .nav-list a {
+        font-size: 1.1rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        padding: 8px 12px;
+    }
+
+    .logo-section {
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .logo-section img {
+        height: 40px;
+    }
+
+    .logo-section span {
+        font-size: 1.1rem;
+    }
+
+    .nav-list ul {
+        gap: 8px;
+        align-items: center;
+    }
+
+    .nav-list a {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+        width: auto;
+        text-align: center;
+        border-radius: 3px;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .logo-section span {
+        display: none;
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin: 6rem auto 2rem;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+h1 {
+    color: #ffffff;
+    font-size: 3rem;
+}
+.highlight{
+    color: #4CAF50;
+}
+
+.video-section {
+    border-radius: 1rem;
+    border: #252525 solid 1px;
+    width: 100%;
+    padding: 1rem;
+}
+.texts{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.playlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-video {
+    flex: 1 1 60%;
+    max-width: 60%;
+}
+
+.main-video iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+.playlist {
+    flex: 1 1 35%;
+    max-width: 35%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #4CAF50;
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.playlist li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #4CAF50;
+    transition: background 0.3s;
+}
+
+.playlist li:hover {
+    background-color: #4CAF50;
+}
+
+.playlist li:last-child {
+    border-bottom: none;
+}
+
+.playlist li.active {
+    background-color: #4CAF50;
+    font-weight: bold;
+}
+
+.video-section {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    transition: all ease 0.5s;
+}
+.video-section:hover{
+    box-shadow: 4px 4px 4px #4caf4f2a;
+}
+.video-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #777777;
+}
+
+.single-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-video-container:hover {
+    box-shadow: 0 6px 12px rgba(11, 156, 74, 0.208);
+}
+
+.single-video-container iframe {
+    width: 90%;
+    max-width: 900px;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+}
+
+.copy-right{
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins",serif;
+    font-weight: 300;
+    font-size: 0.825rem;
+    padding: 0.6rem;
+  }
+
+@media (max-width: 810px) {
+    .main-video iframe {
+        width: 90%; 
+        height: 300px;
+        margin: 10px auto;
+    }
+
+    .playlist {
+        max-height: 320px;
+        padding: 10px;
+    }
+
+    .single-video-container iframe {
+        width: 90%;
+        height: 350px;
+        margin: 15px auto;
+    }
+
+    .video-section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-video iframe {
+        width: 100%;
+        height: 250px;
+        margin: 15px auto;
+    }
+
+    .playlist {
+        max-height: 280px;
+        padding: 10px;
+    }
+
+    .single-video-container iframe {
+        width: 95%;
+        height: 300px;
+        margin: 20px auto;
+    }
+
+    .video-section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-video iframe {
+        width: 100%;
+        height: 200px; 
+        margin: 20px auto;
+    }
+
+    .playlist {
+        max-height: 240px;
+        padding: 10px;
+    }
+
+    .single-video-container iframe {
+        width: 100%;
+        height: 250px; 
+        margin: 20px auto;
+    }
+
+    .video-section {
+        padding: 25px;
+    }
+}

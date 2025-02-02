@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Dexter - MERN Stack Development</title>
+        <link rel="stylesheet" href="frontend.css">
+        <link rel="icon" href="assets/dexterLogo.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;
+        700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;
+        0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="logo-section">
+                <img src="assets/dexterLogo.png" alt="DexterLogo">
+                <span>The Dexter</span>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#courses">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h1>Roadmap for <span class="highlight">Foundations and Backend Development</span></h1>
+
+            <section class="video-section">
+                <h3>JavaScript Fundamentals</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> var, let, const, loops, functions, and ES6+ features.</p>
+                    <p><b>Advanced Concepts:</b> Promises, async/await, event loop, and callback functions.</p>
+                </div>
+                <div class="single-video-container">
+                    <iframe src="https://www.youtube.com/embed/PkZNo7MFNFg" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section class="video-section">
+                <h3>Node.js Basics</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Understanding Node.js runtime and its architecture.</p>
+                    <p><b>Core Modules:</b> fs, path, os, events.</p>
+                    <p><b>Advanced Concepts:</b> Asynchronous programming with Node.js.</p>
+                </div>
+                <div class="single-video-container">
+                    <iframe src="https://www.youtube.com/embed/RLtyhwFtXQA" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <div class="video-section">
+                <h3>Introduction to Databases</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> SQL vs. NoSQL: Use cases and comparisons.</p>
+                    <p><b>Topics:</b> CRUD operations using SQL (PostgreSQL) and NoSQL (MongoDB).</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/Q5aTUc7c4jg" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/Q5aTUc7c4jg">SQL vs. NoSQL</li>
+                        <li data-src="https://www.youtube.com/embed/wdYgpGxDn9E">PostgreSQL Tutorial</li>
+                        <li data-src="https://www.youtube.com/embed/Yrzs49b-A5M">Mongo DB CRUD Tutorial</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="video-section">
+                <h3>MongoDB Deep Dive</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Collections, documents, and schema design.</p>
+                    <p><b>Topics:</b> Aggregation pipelines and indexing.</p>
+                    <p><b>Topics:</b> Connecting Node.js with MongoDB.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/c2M-rlkkT5o" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/c2M-rlkkT5o">Learn MongoDB in 1 Hour 🍃</li>
+                        <li data-src="https://www.youtube.com/embed/vx1C8EyTa7Y">Complete MongoDB aggregation pipeline course</li>
+                        <li data-src="https://www.youtube.com/embed/fbYExfeFsI0">MongoDB & Node.js: Connecting & CRUD Operations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="video-section">
+                <h3>PostgreSQL Deep Dive</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Tables, relationships, and normalization.</p>
+                    <p><b>Topics:</b> Writing advanced queries using joins and subqueries.</p>
+                    <p><b>Topics:</b> Connecting PostgreSQL with Node.js using libraries like pg or Sequelize.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/SpfIwlAYaKk" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/SpfIwlAYaKk">PostgreSQL Tutorial for Beginners</li>
+                        <li data-src="https://www.youtube.com/embed/VaJPdtuql8k">How to connect PostgreSQL using Node JS and Fetch Data Tutorial</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="video-section">
+                <h3>TypeScript Basics</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Setting up a TypeScript project.</p>
+                    <p><b>Topics:</b> Types, interfaces, enums, and generics.</p>
+                    <p><b>Topics:</b> TypeScript configuration (tsconfig.json) and debugging.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/BwuLxPH8IDs" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/BwuLxPH8IDs">Learn TypeScript – Full Tutorial</li>
+                        <li data-src="https://www.youtube.com/embed/eJXVEju3XLM">The TSConfig Cheat Sheet</li>
+                    </ul>
+                </div>
+            </div>     
+            
+            <div class="video-section">
+                <h3>Backend Communication Protocols</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> REST principles and architecture.</p>
+                    <p><b>Topics:</b> WebSockets for real-time communication.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/lsMQRaeKNDk" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/lsMQRaeKNDk">What is a REST API?</li>
+                        <li data-src="https://www.youtube.com/embed/1BfCnjr_Vjg">WebSockets in 100 Seconds & Beyond with Socket.io</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="video-section">
+                <h3>Express.js Basics and Advanced</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Setting up an Express server.</p>
+                    <p><b>Topics:</b> Routing and middleware.</p>
+                    <p><b>Topics:</b> Error handling and request validation.</p>
+                    <p><b>Topics:</b> Authentication using external libraries like Passport.js.</p>
+                    <p><b>Topics:</b> Handling file uploads.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/H9M02of22z4" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/H9M02of22z4">Learn Node.js & Express with Project in 2 Hours</li>
+                        <li data-src="https://www.youtube.com/embed/_lZUq39FGv0">Express JS #15 - Passport.js Authentication</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="video-section">
+                <h3>ORMs and Database Interaction</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Using Mongoose for MongoDB.</p>
+                    <p><b>Topics:</b> Drizzle or Prisma for PostgreSQL.</p>
+                    <p><b>Topics:</b> Writing efficient queries and handling transactions.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/7-NZ0MlPpJA" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/7-NZ0MlPpJA">Learn Drizzle In 60 Minutes</li>
+                        <li data-src="https://www.youtube.com/embed/bALyYC10ABw">Getting Started with MongoDB & Mongoose ODM (Object Data Modeling) Library</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="video-section">
+                <h3>Middleware and Global Error Handling</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Custom middleware for logging and authentication.</p>
+                    <p><b>Topics:</b> Centralized error handling and global catches.</p>
+                    <p><b>Topics:</b> Status codes and best practices.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/nzSAf5cVyWY" allowfullscreen></iframe>
+                        <iframe width="640" height="360" src= title="Express JS #9 - Middleware" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/nzSAf5cVyWY">Express JS Middleware</li>
+                        <li data-src="https://www.youtube.com/embed/wJa5CTIFj7U">HTTP Status Codes</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="video-section">
+                <h3>Zod and Input Validation</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Introduction to Zod for schema validation.</p>
+                    <p><b>Topics:</b> Validating API requests and responses.</p>
+                    <p><b>Topics:</b> Combining Zod with TypeScript for type-safe validations.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/L6BE-U3oy80" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/L6BE-U3oy80">Learn Zod</li>
+                        <li data-src="https://www.youtube.com/embed/RWWgUB9LmzQ">Zod's Object Parsing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="video-section">
+                <h3>Mini Project: RESTful API</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Build a simple task management API with Express.js.</p>
+                    <p><b>Topics:</b> Use MongoDB or PostgreSQL as the database.</p>
+                    <p><b>Topics:</b> Implement authentication and input validation.</p>
+                </div>
+            </div>
+
+            <div class="video-section">
+                <h3>MonoRepos and Turborepo</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Introduction to MonoRepos and their benefits.</p>
+                    <p><b>Topics:</b> Setting up a MonoRepo using Turborepo.</p>
+                    <p><b>Topics:</b> Managing multiple packages efficiently.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/9iU_IE6vnJ8" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/9iU_IE6vnJ8">Monorepos - How the Pros Scale Huge Software Projects // Turborepo vs Nx</li>
+                        <li data-src="https://www.youtube.com/embed/nE-6UnaPHWs">Turborepo and Monorepos clearly explained</li>
+                        <li data-src="https://www.youtube.com/embed/YQLw5kJ1yrQ">Turborepo Tutorial | Part 1 - Typescript, Eslint, Tailwind, Husky shared config setup in a Monorepo</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="video-section">
+                <h3>Serverless Backends</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Understanding serverless architecture.</p>
+                    <p><b>Topics:</b> Building serverless APIs using AWS Lambda or Firebase Functions.</p>
+                    <p><b>Topics:</b> Pros and cons of serverless systems.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/vxJobGtqKVM" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/vxJobGtqKVM">What is Serverless?</li>
+                        <li data-src="https://www.youtube.com/embed/29XCyjl_CmU">Create an API and host on AWS 🤩 | AWS Lambda & AWS API Gateway | AWS Tutorial 🔥 #awstraining</li>
+                        <li data-src="https://www.youtube.com/embed/90pVRK49AQM">Explained: Serverless vs Serverful Backends ⚡</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="video-section">
+                <h3>Authentication Using External Libraries</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> OAuth 2.0 and OpenID Connect basics.</p>
+                    <p><b>Topics:</b> Implementing Google or GitHub login in Node.js.</p>
+                    <p><b>Topics:</b> Secure token management and refresh tokens.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/Q0a0594tOrc" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/Q0a0594tOrc">NodeJS & Express - Google OAuth2 using PassportJS</li>
+                        <li data-src="https://www.youtube.com/embed/QxrOiFWCfpA">Node.js Express Github OAuth2 Project to Login With Github Using Access Token & Sessions in Browser</li>
+                        <li data-src="https://www.youtube.com/embed/LowJMwa7LCU">What are Refresh Tokens?! and...How to Use Them Securely</li>
+                        <li data-src="https://www.youtube.com/embed/UBUNrFtufWo">Session vs Token Authentication in 100 Seconds</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="video-section">
+                <h3>Scaling Node.js Applications</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Performance benchmarking and optimization techniques.</p>
+                    <p><b>Topics:</b> Load balancing and clustering.</p>
+                    <p><b>Topics:</b> Caching with Redis or Memcached.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/_pWA4rbzvIg" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/_pWA4rbzvIg">JavaScript performance is weird... Write scientifically faster code with benchmarking</li>
+                        <li data-src="https://www.youtube.com/embed/sCR3SAVdyCc">What is a Load Balancer?</li>
+                        <li data-src="https://www.youtube.com/embed/Tqaqdfxi-J4">What is Redis Cache?</li>
+                        <li data-src="https://www.youtube.com/embed/-5RTyEim384">How to use Redis Caching for Incredible Performance</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <section class="video-section">
+                <h3>Deploying npm Packages</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Writing reusable Node.js packages.</p>
+                    <p><b>Topics:</b> Publishing to npm.</p>
+                    <p><b>Topics:</b> Versioning and managing dependencies.</p>
+                </div>
+                <div class="single-video-container">
+                    <iframe src="https://www.youtube.com/embed/aKTSC4D1GL8"  allowfullscreen></iframe>
+                </div>
+            </section>
+            
+            <div class="video-section">
+                <h3>React Basics</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Setting up a React project.</p>
+                    <p><b>Topics:</b> Components, props, and state.</p>
+                    <p><b>Topics:</b> Lifecycle methods and hooks (useState, useEffect).</p>
+                    <p><b>Topics:</b> Context API and its internals.</p>
+                    <p><b>Topics:</b> Creating and using custom hooks.</p>
+                    <p><b>Topics:</b> Optimizing React apps with React.memo and useCallback.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/CgkZ7MvWUAA" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/CgkZ7MvWUAA">React Full Course for free ⚛️ (2024)</li>
+                        <li data-src="https://www.youtube.com/embed/I2Bgi0Qcdvc">Custom Hooks in React (Design Patterns)</li>
+                        <li data-src="https://www.youtube.com/embed/vpE9I_eqHdM">Learn React Hooks: useMemo - Simply Explained!</li>
+                        <li data-src="https://www.youtube.com/embed/_AyFP5s69N4">Learn useCallback In 8 Minutes</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="video-section">
+                <h3>State Management with Recoil</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Introduction to Recoil for state management.</p>
+                    <p><b>Topics:</b> Managing global state and selectors.</p>
+                    <p><b>Topics:</b> Comparing Recoil with Redux.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/E_OJ-sAfrYs" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/E_OJ-sAfrYs">How to use Recoil for state management in ReactJS or NextJS</li>
+                        <li data-src="https://www.youtube.com/embed/BhQYZmaxTCM">The State of State Management in React</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="video-section">
+                <h3>Styling with CSS and Tailwind</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> CSS fundamentals: Flexbox and Grid.</p>
+                    <p><b>Topics:</b> Using Tailwind CSS for rapid styling.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/wRNinF7YQqQ" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/wRNinF7YQqQ">Learn CSS in 1 hour 🎨</li>
+                        <li data-src="https://www.youtube.com/embed/DenUCuq4G04">Tailwind CSS Tutorial for Beginners (2024) – What YOU need to know</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <section class="video-section">
+                <h3>Frontend-Backend Integration</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Connecting React/Next.js frontend with the Express.js backend.</p>
+                    <p><b>Topics:</b> Using Axios or Fetch for API communication.</p>
+                    <p><b>Topics:</b> Handling CORS and session management.</p>
+                </div>
+                <div class="single-video-container">
+                    <iframe src="https://www.youtube.com/embed/ntKkVrQqBYY"  allowfullscreen></iframe>
+                </div>
+            </section>
+            
+            <div class="video-section">
+                <h3>DevOps Basics with AWS</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Deploying Node.js and React apps to AWS EC2.</p>
+                    <p><b>Topics:</b> Deploying to modern platforms like Fly.io or Vercel.</p>
+                </div>
+                <div class="playlist-container">
+                    <div class="main-video">
+                        <iframe id="main-video-dv" src="https://www.youtube.com/embed/nQdyiK7-VlQ" allowfullscreen></iframe>
+                    </div>
+                    <ul class="playlist" id="playlist-dv">
+                        <li data-src="https://www.youtube.com/embed/nQdyiK7-VlQ">Easily Deploy Full Stack Node.js Apps on AWS EC2 | Step-by-Step Tutorial</li>
+                        <li data-src="https://www.youtube.com/embed/t_PoR9rdfDI">How to Deploy Mern App on Vercel (2024)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="video-section">
+                <h3>Final Project Deployment</h3>
+                <div class="texts">
+                    <p><b>Topics:</b> Deploy the app on AWS or a similar cloud platform.</p>
+                </div>
+            </div>    
+        </div>
+
+        <section class="copy-right">
+            <span>All rights reserved © 2025</span>
+        </section>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const videoSections = document.querySelectorAll(".video-section");
+
+                videoSections.forEach(section => {
+                    const playlistItems = section.querySelectorAll(".playlist li");
+                    const mainVideo = section.querySelector(".main-video iframe");
+
+                    playlistItems.forEach(item => {
+                        item.addEventListener("click", () => {
+                            const videoSrc = item.getAttribute("data-src");
+                            mainVideo.src = videoSrc;
+
+                            playlistItems.forEach(i => i.classList.remove("active"));
+                            item.classList.add("active");
+                        });
+                    });
+                });
+            });
+
+        </script>
+    </body>
+</html>
