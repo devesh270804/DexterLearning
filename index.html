@@ -174,6 +174,10 @@
         <span>All rights reserved © 2025</span>
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -188,12 +192,30 @@
     </script>
     
     <script>
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault();
-                navLinks.forEach(nav => nav.classList.remove('active'));
-                link.classList.add('active');
+        document.addEventListener("DOMContentLoaded", function() {
+            gsap.registerPlugin(ScrollTrigger);
+    
+            // Navigation link active state
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    navLinks.forEach(nav => nav.classList.remove('active'));
+                    link.classList.add('active');
+                });
+            });
+    
+            // GSAP animation for the contact section
+            gsap.from("#contact .contact-section", {
+                opacity: 0,   // Start with the section being invisible
+                y: 100,       // Start position from 100px below
+                duration: 1.8,  // Animation duration
+                ease: "power2.out",  // Ease for smooth effect
+                scrollTrigger: {
+                    trigger: "#contact",  // Trigger the animation when the #contact section comes into view
+                    start: "top 40%",      // When 80% of the section is in the viewport
+                    toggleActions: "play none none none",  // Play animation only once
+                }
             });
         });
     </script>
