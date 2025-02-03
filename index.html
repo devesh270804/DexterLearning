@@ -206,15 +206,16 @@
             });
     
             // GSAP animation for the contact section
-            gsap.from("#contact .contact-section", {
-                opacity: 0,   // Start with the section being invisible
-                y: 100,       // Start position from 100px below
-                duration: 1.8,  // Animation duration
-                ease: "power2.out",  // Ease for smooth effect
+           gsap.from("#contact .contact-section", {
+                opacity: 0,
+                duration: 0.5,
+                delay:1.5,
+                y:200,
+                ease: "elastic.out(1,0.3)",
                 scrollTrigger: {
-                    trigger: "#contact",  // Trigger the animation when the #contact section comes into view
-                    start: "top 80%",      // When 80% of the section is in the viewport
-                    toggleActions: "play none none none",  // Play animation only once
+                    trigger: "#contact",
+                    start: "top 60%",
+                    toggleActions: "play none none none",
                 }
             });
         });
