@@ -432,45 +432,59 @@ body {
 }
 
 /* Small devices (max-width: 576px) */
+/* Small devices (max-width: 576px) */
 @media (max-width: 576px) {
-    .video-section{
+    .video-section {
         padding: 1rem;
         text-align: center;
     }
 
-    .single-video-container{
+    .single-video-container {
         width: 100%;
-        height: auto;
+        padding: 2px;
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
     }
-    .video-section p{
+
+    .video-section p {
         display: none;
     }
 
-    .single-video-container iframe{
+    .single-video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 160px; /* Adjust height for small devices */
+        height: 100%;
     }
 }
 
 /* Medium devices (max-width: 768px) */
 @media (max-width: 768px) {
-    .video-section{
+    .video-section {
         padding: 1.5rem 2rem;
     }
 
-    .video-section p{
+    .video-section p {
         display: none;
     }
 
-    .single-video-container{
+    .single-video-container {
         width: 90%;
         max-width: 600px;
-        height: auto;
+        padding: 2px;
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
     }
 
-    .single-video-container iframe{
+    .single-video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 300px; /* Adjust height for medium devices */
+        height: 100%;
     }
 
     .video-title {
@@ -480,28 +494,35 @@ body {
 
 /* Large devices (max-width: 1024px) */
 @media (max-width: 1024px) {
-    .video-section{
+    .video-section {
         padding: 2rem 3rem;
     }
 
-    .video-section p{
+    .video-section p {
         display: none;
     }
 
-    .single-video-container{
+    .single-video-container {
         width: 100%;
-        height: auto;
+        padding: 5px;
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
     }
 
-    .single-video-container iframe{
+    .single-video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 400px; /* Adjust height for large devices */
+        height: 100%;
     }
 
     .video-title {
         font-size: 1.8rem;
     }
 }
+
 
 
 
