@@ -179,3 +179,66 @@ body {
     background-color: #020202;
     border-top: 1px solid #333;
 }
+
+/* Small devices (max-width: 576px) */
+@media (max-width: 576px) {
+    .container {
+        margin-top: 5rem;
+    }
+
+    .desc {
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    .desc h1 {
+        font-size: 1.8rem;
+    }
+
+    .desc p {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+}
+
+/* Medium devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 7rem;
+    }
+
+    .desc {
+        padding: 2rem;
+        max-width: 85%;
+    }
+
+    .desc h1 {
+        font-size: 2rem;
+    }
+
+    .desc p {
+        font-size: 0.95rem;
+        line-height: 1.7rem;
+    }
+}
+
+/* Large devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        margin-top: 8rem;
+    }
+
+    .desc {
+        padding: 3rem;
+        max-width: 75%;
+    }
+
+    .desc h1 {
+        font-size: 2.2rem;
+    }
+
+    .desc p {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+}
