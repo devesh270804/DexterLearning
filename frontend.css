@@ -1,10 +1,10 @@
 * {
     padding: 0;
     margin: 0;
-    background-color: #020202;
+    background-color: #f6f6f6;
     text-decoration: none;
     list-style: none;
-    color: white;
+    color: rgb(32, 32, 32);
 }
 
 body {
@@ -16,8 +16,7 @@ body {
     position: fixed;
     top: 0;
     margin: 0 auto;
-    width: 90%;
-    background-color: rgba(0, 0, 0, 1);
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,7 +24,6 @@ body {
     height: 70px;
     z-index: 1000;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    border-bottom: 0.2px solid rgb(46, 46, 46);
 }
 
 .logo-section {
@@ -42,7 +40,6 @@ body {
 .logo-section span {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #fff;
 }
 
 .nav-list ul {
@@ -53,7 +50,6 @@ body {
 .nav-list a {
     font-size: 1rem;
     font-weight: 400;
-    color: white;
     padding: 5px 10px;
     border-radius: 5px;
     transition: all 0.3s ease;
@@ -144,11 +140,10 @@ body {
     align-items: center;
 }
 h1 {
-    color: #ffffff;
     font-size: 3rem;
 }
 .highlight{
-    color: #4CAF50;
+    color: orange;
 }
 
 @keyframes fadeInSlide {
@@ -193,23 +188,19 @@ h1 {
     padding: 1.5rem;
     margin: 3rem auto;
     max-width: 600px;
-    background: rgba(0, 0, 0, 0.3);
-    border: 2px solid rgba(0, 156, 75, 0.4);
+    background: rgb(224, 224, 224);
+    border: 2px solid rgba(255, 255, 255, 0.859);
     backdrop-filter: blur(12px);
     border-radius: 1.5rem;
-    box-shadow: 0px 0px 15px rgba(0, 181, 72, 0.3);
     text-align: center;
     transition: all 0.3s ease-in-out;
     
-    /* Apply animations */
-    animation: fadeInSlide 0.8s ease-out, pulseGlow 2s infinite;
 }
 
 .notice-p {
-    color: #ff4d4d;
+    color: #ab0000;
     font-size: 1.4rem;
     font-weight: bold;
-    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
     text-transform: uppercase;
     letter-spacing: 1px;
     background-color: #00000000;
@@ -225,7 +216,7 @@ h1 {
 
 .book-info p {
     font-size: 1.1rem;
-    color: #f3f3f3; /* Soft green to match theme */
+    color: #363636; /* Soft green to match theme */
     font-weight: 500;
     background-color: #00000000;
 }
@@ -233,13 +224,13 @@ h1 {
 .book-info img {
     height: 6rem;
     margin: 1rem;
-    filter: drop-shadow(0 0 8px rgba(0, 255, 0, 0.4));
+    filter: drop-shadow(0 0 8px rgba(120, 120, 120, 0.4));
 }
 
 /* Hover Effect - Slight glow and scale */
 .notice:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 25px rgba(0, 174, 87, 0.5);
+    box-shadow: 0px 0px 25px rgba(126, 126, 126, 0.5);
 }
 
 
